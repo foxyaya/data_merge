@@ -1,0 +1,30 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+zuul:
+  prefix: /api # 路由路径前缀 路由拿来转发的 需要被访问到的话需要在这个里面加
+  routes:
+    item-service: /item/**
+    upload-service:
+      path: /upload/**
+      serviceId: upload-service
+      strip-prefix: false
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000 #熔断超时 5000ms
+ribbon:
+  ConnectTimeout: 1000 #ribbon连接超时时间
+  ReadTimeout: 3500 #ribbon读取超时时长
+  MaxAutoRetries: 0 #当前服务器重试次数
+  MaxAutoRetriesNextServer: 0  #切换服务重试次数
