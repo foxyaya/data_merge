@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @date 2020/3/6 18:42
  */
 @RestController
-@RequestMapping("upload")
+@RequestMapping("/upload")
 public class UploadController {
 
     @Autowired
@@ -28,7 +28,7 @@ public class UploadController {
      * @param file
      * @return
      */
-    @PostMapping("image")
+    @PostMapping("/image")
     public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file) {
         String url = this.uploadService.upload(file);
         if (StringUtils.isBlank(url)) {
