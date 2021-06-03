@@ -1,0 +1,65 @@
+server:
+  port: 18081
+spring:
+  mail:
+    port: 465
+    protocol: smtp
+    default-encoding: UTF-8
+    host: smtp.qq.com
+    username: nullgirlexpection@qq.com
+    password: jflmzoebkrozbdeh
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: user
+  redis:
+    host: www.aesfile.com
+    port: 6379
+    password: yy520520
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://49.233.171.62:3306/aesfile?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: yy520520###
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+          strategy: SEMAPHORE
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+aes:
+  password: 19ff8de86173460688de227426e958e8
