@@ -7,24 +7,51 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ly-merge" />
+        <module name="ly-user-service" />
         <module name="lygateway" />
-        <module name="lyupload" />
+        <module name="permission" />
         <module name="lyregistry" />
+        <module name="lyupload" />
+        <module name="ly-shiro" />
         <module name="lycommon" />
-        <module name="ly-item-interface" />
-        <module name="ly-item-service" />
+        <module name="ly-user-api" />
+        <module name="ly-data_merger-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="data-merger" target="1.8" />
+      <module name="data_merge" target="1.8" />
+      <module name="dataMerge" target="1.8" />
+      <module name="ly-item-service" target="1.8" />
+      <module name="ly-pojo-feigin" target="1.8" />
+      <module name="ly-use-service" target="1.8" />
+      <module name="ly-user-interface" target="1.8" />
+      <module name="merge" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ly-item" options="-parameters" />
-      <module name="ly-item-interface" options="-parameters" />
+      <module name="data-merger" options="-parameters" />
+      <module name="dataMerge" options="-parameters" />
+      <module name="data_merge" options="-parameters" />
+      <module name="ly-data_merger-api" options="-parameters" />
       <module name="ly-item-service" options="-parameters" />
+      <module name="ly-merge" options="-parameters" />
+      <module name="ly-pojo-feigin" options="-parameters" />
+      <module name="ly-shiro" options="-parameters" />
+      <module name="ly-use-service" options="-parameters" />
+      <module name="ly-user-api" options="-parameters" />
+      <module name="ly-user-interface" options="-parameters" />
+      <module name="ly-user-service" options="-parameters" />
       <module name="lycommon" options="-parameters" />
+      <module name="lyfeigin" options="-parameters" />
       <module name="lygateway" options="-parameters" />
       <module name="lyregistry" options="-parameters" />
+      <module name="lyservice" options="-parameters" />
       <module name="lyupload" options="-parameters" />
+      <module name="merge" options="-parameters" />
+      <module name="permission" options="-parameters" />
     </option>
   </component>
 </project>

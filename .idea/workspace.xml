@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0541fa5f-c1bc-4801-839c-c8dc2b4d6abd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/enums/ExceptionEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/enums/ExceptionEnums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/pojo/PageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/pojo/PageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/pojo/PageResDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/pojo/PageResDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/BeanUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/BeanUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/Md5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/utils/Md5Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/vo/ResultDescDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/vo/ResultDescDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/vo/ResultMessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/vo/ResultMessageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/config/FeignConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/config/FeignConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/feigin/UploadFigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/feigin/UploadFigin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/GoodsMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/GoodsMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/GoodsTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/GoodsTemp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/GoodsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/GoodsType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-user-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-user-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/config/FeignConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/config/FeignConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/feigin/UserFigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/feigin/UserFigin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/pojo/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-feigin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-feigin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/src/main/java/cn/ybx66/gateway/LyGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/src/main/java/cn/ybx66/gateway/LyGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/src/main/java/cn/ybx66/gateway/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/src/main/java/cn/ybx66/gateway/config/GlobalCorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-registry/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ly-registry/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/DataMergeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/DataMergeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/anno/Decrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/anno/Decrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/anno/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/anno/Encrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/aop/SafetyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/aop/SafetyAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/CommonWebSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/CommonWebSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/DemoTaskScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/DemoTaskScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/JdbcConnectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/JdbcConnectConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/MyRequestWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/MyRequestWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/PayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/PayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/WXPayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/WXPayConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/DataMergeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/DataMergeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/PayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/BestGoodsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/BestGoodsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/GoodsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/GoodsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/GoodsResDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/GoodsResDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/JDBCDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/JDBCDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/PayDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/PayDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/ShopDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/ShopDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/ShopResDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/ShopResDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/filter/DealStreamFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/filter/DealStreamFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/DataMergeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/DataMergeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/GoodsMergeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/GoodsMergeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/ShopMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/ShopMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/UploadMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/UploadMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/DataMergeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/DataMergeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/UploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/DataMergeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/DataMergeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/UploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/UploadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/socket/PayWebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/socket/PayWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/AesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/AesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/JDBCConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/JDBCConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/QRCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/QRCodeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/RsaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/RsaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/jdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/payUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/payUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-merge/src/test/java/ybx66/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-merge/src/test/java/ybx66/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/config/CommonWebSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/config/CommonWebSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/SendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/SendController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/credentialsMatcher/CustomCredentialsMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/credentialsMatcher/CustomCredentialsMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/SmtpDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/SmtpDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/UserReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/UserReqDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/UserResDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/UserResDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/userDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/dto/userDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mapper/PermissionsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mapper/PermissionsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mq/SmsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/mq/SmsListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/RolesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/RolesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/impl/RolesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/impl/RolesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/shiro/CustomRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/shiro/CustomRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/utils/MailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/utils/MailUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/utils/SmsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/utils/SmsUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/ly-user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/SessionDAO/RedisSessionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/SessionDAO/RedisSessionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/SpringShiroDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/SpringShiroDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/credentialsMatcher/CustomCredentialsMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/credentialsMatcher/CustomCredentialsMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/filter/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/filter/MyExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/sessionManager/CommonWebSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/sessionManager/CommonWebSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/shiro/CustomRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/shiro/CustomRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/token/UserToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/token/UserToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/vo/UsersDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/vo/UsersDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-shiro/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-shiro/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-upload/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ly-upload/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-upload/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-upload/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/LyUploadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/LyUploadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/service/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/service/UploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ly-upload/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ly-upload/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/PermissionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/PermissionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/DbShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/DbShiroRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JWTCredentialsMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JWTCredentialsMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JWTShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JWTShiroRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JWTToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JWTToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/ResponseHeaderAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/ResponseHeaderAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/configuration/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/controller/AsyncRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/controller/AsyncRequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/dto/ArticleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/dto/ArticleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/filter/AnyRolesAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/filter/AnyRolesAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/filter/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/filter/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/cn/ybx66/permission/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/ly-registry/target/" />
+    <ignored path="$PROJECT_DIR$/ly-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/ly_item/target/" />
+    <ignored path="$PROJECT_DIR$/ly_item/ly-item-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ly_item/ly-item-service/target/" />
+    <ignored path="$PROJECT_DIR$/ly-item/ly-item-service/target/" />
+    <ignored path="$PROJECT_DIR$/ly-item/ly-item-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ly-item/target/" />
+    <ignored path="$PROJECT_DIR$/ly-common/target/" />
+    <ignored path="$PROJECT_DIR$/ly-upload/target/" />
+    <ignored path="$PROJECT_DIR$/keyou-shiro/target/" />
+    <ignored path="$PROJECT_DIR$/ly-shiro/target/" />
+    <ignored path="$PROJECT_DIR$/ly-service/target/" />
+    <ignored path="$PROJECT_DIR$/ly-service/ly-user-api/target/" />
+    <ignored path="$PROJECT_DIR$/ly-pojo-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/ly-pojo-feigin/ly-user-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ly-feigin/target/" />
+    <ignored path="$PROJECT_DIR$/ly-feigin/ly-user-api/target/" />
+    <ignored path="$PROJECT_DIR$/ly-service/ly-user-service/target/" />
+    <ignored path="$PROJECT_DIR$/permission/target/" />
+    <ignored path="$PROJECT_DIR$/ly-service/data_merge/target/" />
+    <ignored path="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/target/" />
+    <ignored path="$PROJECT_DIR$/ly-service/data-merger/target/" />
+    <ignored path="$PROJECT_DIR$/ly-service/merge/target/" />
+    <ignored path="$PROJECT_DIR$/ly-service/ly-merge/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data_merge@121.40.64.224" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data_merge@121.40.64.224" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="data_merge@121.40.64.224" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="data_merge: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/DataMergeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1701">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2970">
+              <caret line="141" column="25" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/DataMergeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+              <folding>
+                <element signature="e#1396#1397#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1516#1517#0" expanded="true" />
+                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1682#1683#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/DataMergeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/DemoTaskScheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SecurityManager</find>
+      <find>doGetAuthorizationInfo</find>
+      <find>JwtAuthFilter</find>
+      <find>YOUR_PHONE_KEY</find>
+      <find>ly</find>
+      <find>userId</find>
+      <find>update</find>
+      <find>filterChainDefinitionMap</find>
+      <find>HttpServletRequest</find>
+      <find>args</find>
+      <find>getField</find>
+      <find>getReader</find>
+      <find>JSONOb</find>
+      <find>LinkedHashMap</find>
+      <find>tk</find>
+      <find>Role</find>
+      <find>size</find>
+      <find>getUser</find>
+      <find>GoodsDTO</find>
+      <find>getColumn</find>
+      <find>hystrix.command.default.execution.isolation.strategy</find>
+      <find>userFigin</find>
+      <find>tb_goods_tb_goods_temp</find>
+      <find>data_merge</find>
+      <find>getScheduler</find>
+      <find>GoodsMergeMapper</find>
+      <find>goods_name</find>
+      <find>cache</find>
+      <find>findNameAll</find>
+      <find>findAllByAdmin</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/payUtil.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/anno/Encrypt.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/anno/Decrypt.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/socket/PayWebSocket.java" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/config/FeignConfiguration.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/WXPayConfiguration.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/JdbcConnectConfig.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/utils/JDBCConnection.java" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/config/FeignConfig.java" />
+        <option value="$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-upload/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/config/FeignConfig.java" />
+        <option value="$PROJECT_DIR$/ly-shiro/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/aop/SafetyAspect.java" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/feigin/UploadFigin.java" />
+        <option value="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/config/FeignConfiguration.java" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/config/FeignBasicAuthRequestInterceptor.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-user-api/src/main/java/cn/ybx66/userapi/feigin/UserFigin.java" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/config/FeignConfiguration.java" />
+        <option value="$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/LyUploadApplication.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/DataMergeApplication.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/pom.xml" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/DemoServiceProxy.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/JobDemoService.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/JobDemoService.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/DataMergeService.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/DemoTaskScheduler.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/BestGoodsDTO.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/DataMergeMapper.java" />
+        <option value="$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/GoodsMerge.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/PayController.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/mapper/GoodsMergeMapper.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/DataMergeController.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/ShopController.java" />
+        <option value="$PROJECT_DIR$/ly-gateway/src/main/java/cn/ybx66/gateway/LyGateway.java" />
+        <option value="$PROJECT_DIR$/ly-gateway/Dockerfile" />
+        <option value="$PROJECT_DIR$/ly-registry/Dockerfile" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/Dockerfile" />
+        <option value="$PROJECT_DIR$/ly-service/ly-user-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ly-service/ly-user-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/ly-shiro/Dockerfile" />
+        <option value="$PROJECT_DIR$/ly-upload/Dockerfile" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/ShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/DataMergeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/UserController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\ACER\.m2\repository" />
+        <option name="mavenHome" value="E:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="F:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ly-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="342" />
+    <option name="y" value="125" />
+    <option name="width" value="2108" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conmmon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conmmon" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conmmon" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conmmon" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conmmon" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-service" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-merge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-shiro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ybx66" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ybx66" type="462c0819:PsiDirectoryNode" />
+              <item name="ly-upload" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ly-upload" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\leyouheduan\ybx66\ly-service\ly-merge\src\main\java" />
+      <recent name="E:\leyouheduan\ybx66\ly-service\data-merger\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.ybx66.data_merge.config" />
+      <recent name="ybx66.utils" />
+      <recent name="ybx66.controller" />
+      <recent name="cn.ybx66.configure" />
+      <recent name="cn.ybx66.conmmon.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\leyouheduan\ybx66\ly-upload" />
+      <recent name="E:\leyouheduan\ybx66\ly-shiro" />
+      <recent name="E:\leyouheduan\ybx66\ly-service\ly-user-service" />
+      <recent name="E:\leyouheduan\ybx66\ly-service\ly-merge" />
+      <recent name="E:\leyouheduan\ybx66\ly-registry" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DataMergeApplication">
+    <configuration name="AesUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ybx66.utils.AesUtil" />
+      <module name="ly-merge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ybx66.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QRCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ybx66.utils.QRCodeUtil" />
+      <module name="ly-merge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ybx66.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="ly-pojo-feigin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="ly-pojo-feigin" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataMergeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ly-merge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ybx66.anno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ybx66.DataMergeApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="lygateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ybx66.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ybx66.gateway.LyGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyRegistry" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lyregistry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ybx66.LyRegistry" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LyUploadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="lyupload" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ybx66.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ybx66.LyUploadApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PermissionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="permission" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ybx66.permission.PermissionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringShiroDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ly-shiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ybx66.shiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ybx66.shiro.SpringShiroDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ly-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ybx66.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ybx66.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AesUtil" />
+      <item itemvalue="Application.QRCodeUtil" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.LyUploadApplication" />
+      <item itemvalue="Spring Boot.LyGateway" />
+      <item itemvalue="Spring Boot.LyRegistry" />
+      <item itemvalue="Spring Boot.SpringShiroDemoApplication" />
+      <item itemvalue="Spring Boot.PermissionApplication" />
+      <item itemvalue="Spring Boot.DataMergeApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QRCodeUtil" />
+        <item itemvalue="Application.AesUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0541fa5f-c1bc-4801-839c-c8dc2b4d6abd" name="Default Changelist" comment="" />
+      <created>1582117290290</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582117290290</updated>
+      <workItem from="1582117293744" duration="9340000" />
+      <workItem from="1582170557090" duration="17579000" />
+      <workItem from="1582257562738" duration="12193000" />
+      <workItem from="1582342876984" duration="5190000" />
+      <workItem from="1582444886594" duration="1275000" />
+      <workItem from="1582515634364" duration="1353000" />
+      <workItem from="1582605903557" duration="1037000" />
+      <workItem from="1582606978282" duration="4853000" />
+      <workItem from="1582797470533" duration="651000" />
+      <workItem from="1583207235986" duration="10846000" />
+      <workItem from="1583291399116" duration="3599000" />
+      <workItem from="1583484259918" duration="7931000" />
+      <workItem from="1583501456833" duration="305000" />
+      <workItem from="1583501847382" duration="2947000" />
+      <workItem from="1583568005987" duration="6478000" />
+      <workItem from="1583725247416" duration="9853000" />
+      <workItem from="1583820926739" duration="1733000" />
+      <workItem from="1583843497950" duration="2018000" />
+      <workItem from="1583906894161" duration="4553000" />
+      <workItem from="1584347168836" duration="657000" />
+      <workItem from="1584770617718" duration="1467000" />
+      <workItem from="1584775956448" duration="2150000" />
+      <workItem from="1585142156484" duration="1460000" />
+      <workItem from="1585190462996" duration="1047000" />
+      <workItem from="1585797631989" duration="1432000" />
+      <workItem from="1585836900198" duration="608000" />
+      <workItem from="1585899909191" duration="1858000" />
+      <workItem from="1586097754397" duration="1372000" />
+      <workItem from="1586245626712" duration="2252000" />
+      <workItem from="1586267369325" duration="1746000" />
+      <workItem from="1586686753931" duration="1321000" />
+      <workItem from="1587953184864" duration="2845000" />
+      <workItem from="1589723585084" duration="683000" />
+      <workItem from="1590654731837" duration="87000" />
+      <workItem from="1590714371601" duration="316000" />
+      <workItem from="1591614142397" duration="664000" />
+      <workItem from="1591951419241" duration="3604000" />
+      <workItem from="1592035364958" duration="7828000" />
+      <workItem from="1600303056824" duration="122000" />
+      <workItem from="1600303634338" duration="61000" />
+      <workItem from="1600325562093" duration="412000" />
+      <workItem from="1603794403088" duration="221000" />
+      <workItem from="1605237098781" duration="8645000" />
+      <workItem from="1605520594818" duration="2680000" />
+      <workItem from="1606136033476" duration="684000" />
+      <workItem from="1606204778165" duration="1630000" />
+      <workItem from="1610182507202" duration="1161000" />
+      <workItem from="1611734179284" duration="1245000" />
+      <workItem from="1612441634334" duration="8428000" />
+      <workItem from="1612483985333" duration="16555000" />
+      <workItem from="1612693900783" duration="64458000" />
+      <workItem from="1613301527960" duration="633000" />
+      <workItem from="1613621142432" duration="4683000" />
+      <workItem from="1613718823010" duration="10457000" />
+      <workItem from="1615961652192" duration="2615000" />
+      <workItem from="1616401648320" duration="4053000" />
+      <workItem from="1617261868517" duration="1383000" />
+      <workItem from="1617790425693" duration="13226000" />
+      <workItem from="1617935719132" duration="39145000" />
+      <workItem from="1618132585877" duration="12563000" />
+      <workItem from="1618298502230" duration="4961000" />
+      <workItem from="1618487050650" duration="8428000" />
+      <workItem from="1618567601998" duration="154676000" />
+      <workItem from="1619699611467" duration="140588000" />
+      <workItem from="1620190299455" duration="60067000" />
+      <workItem from="1620749722177" duration="31422000" />
+      <workItem from="1621700548399" duration="655000" />
+      <workItem from="1621701313512" duration="3458000" />
+      <workItem from="1622704757727" duration="1554000" />
+    </task>
+    <task id="LOCAL-00001" summary="嘿嘿">
+      <created>1591952955296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591952955296</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更改yml配置">
+      <created>1605510711466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605510711466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="738000000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40849674" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35620916" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.33006537" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32826087" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.27995643" />
+      <window_info anchor="bottom" id="Statistic" order="15" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="16" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="17" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.20597652" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32977587" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="嘿嘿" />
+    <MESSAGE value="更改yml配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改yml配置" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ly-feigin/ly-data_merger-api/src/main/java/cn/ybx66/data_merge/pojo/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-common/src/main/java/cn/ybx66/conmmon/vo/ResultMessageDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/BestGoodsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/GoodsResDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-upload/src/main/java/cn/ybx66/service/UploadService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="35" column="89" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/aop/SafetyAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="108" column="24" lean-forward="true" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/PayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/MyRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/JdbcConnectConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/CommonWebSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/CustomRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="71" lean-forward="true" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/PayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/java/cn/ybx66/gateway/config/GlobalCorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/java/cn/ybx66/gateway/LyGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-shiro/src/main/java/cn/ybx66/shiro/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-gateway/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-registry/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-registry/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-shiro/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-shiro/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-upload/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-upload/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/GoodsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="153" column="29" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="939">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+          <folding>
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/filter/DealStreamFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/dto/ShopResDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/ShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="241" column="48" lean-forward="true" selection-start-line="241" selection-start-column="48" selection-end-line="241" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-user-service/src/main/java/cn/ybx66/userservice/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2970">
+          <caret line="141" column="25" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/controller/DataMergeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding>
+            <element signature="e#1396#1397#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/DataMergeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/configure/DemoTaskScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ly-service/ly-merge/src/main/java/ybx66/service/impl/DataMergeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ly-merge</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>

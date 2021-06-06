@@ -1,13 +1,16 @@
-package com.wsl.shiro;
+package cn.ybx66.shiro.shiro;
 
-import com.wsl.bean.Permissions;
-import com.wsl.bean.Role;
-import com.wsl.bean.User;
-import com.wsl.service.LoginService;
+
+import cn.ybx66.shiro.credentialsMatcher.CustomCredentialsMatcher;
+import cn.ybx66.shiro.service.LoginService;
+import cn.ybx66.userapi.pojo.Permissions;
+import cn.ybx66.userapi.pojo.Role;
+import cn.ybx66.userapi.pojo.User;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -15,17 +18,19 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
+/**
+ * Realm
+ */
 public class CustomRealm extends AuthorizingRealm {
 
     @Autowired
     private LoginService loginService;
-
     /**
      * @MethodName doGetAuthorizationInfo
      * @Description 权限配置类
      * @Param [principalCollection]
      * @Return AuthorizationInfo
-     * @Author WangShiLin
+     * @Author Fox
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
@@ -39,9 +44,9 @@ public class CustomRealm extends AuthorizingRealm {
             //添加角色
             simpleAuthorizationInfo.addRole(role.getRoleName());
             //添加权限
-            for (Permissions permissions : role.getPermissions()) {
-                simpleAuthorizationInfo.addStringPermission(permissions.getPermissionsName());
-            }
+//            for (Permissions permissions : role.getPermissions()) {
+//                simpleAuthorizationInfo.addStringPermission(permissions.getPermissionsName());
+//            }
         }
         return simpleAuthorizationInfo;
     }
@@ -51,7 +56,7 @@ public class CustomRealm extends AuthorizingRealm {
      * @Description 认证配置类
      * @Param [authenticationToken]
      * @Return AuthenticationInfo
-     * @Author WangShiLin
+     * @Author Fox
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
@@ -59,6 +64,7 @@ public class CustomRealm extends AuthorizingRealm {
             return null;
         }
         //获取用户信息
+        System.out.println("authenticationToken.getCredentials() = " + authenticationToken.getCredentials());
         String name = authenticationToken.getPrincipal().toString();
         User user = loginService.getUserByName(name);
         if (user == null) {
@@ -70,4 +76,14 @@ public class CustomRealm extends AuthorizingRealm {
             return simpleAuthenticationInfo;
         }
     }
+
+    @Override
+    public void setCredentialsMatcher(CredentialsMatcher credentialsMatcher) {
+        //自定义认证加密方式
+        CustomCredentialsMatcher customCredentialsMatcher = new CustomCredentialsMatcher();
+        // 设置自定义认证加密方式
+        super.setCredentialsMatcher(customCredentialsMatcher);
+    }
+
+
 }

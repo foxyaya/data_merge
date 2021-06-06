@@ -1,5 +1,7 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
+import cn.ybx66.permission.service.UserService;
+import cn.ybx66.userapi.pojo.UserDto;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
@@ -8,8 +10,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.github.demo.dto.UserDto;
-import com.github.demo.service.UserService;
+
 
 
 /**

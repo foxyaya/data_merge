@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ybx66.feigin</groupId>
+    <groupId>com.ybx66.dataMrgerFeigin</groupId>
     <artifactId>ly-data_merger-api</artifactId>
 
 

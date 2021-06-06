@@ -26,7 +26,6 @@ public class PayConfig implements WXPayConfig {
 
     private String notifyUrl ;
 
-
     @Override
     public InputStream getCertStream() {
         return null;

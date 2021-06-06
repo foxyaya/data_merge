@@ -12,6 +12,9 @@
     <groupId>com.ybx66.common</groupId>
     <artifactId>ly-gateway</artifactId>
 
+    <properties>
+        <org.crazycake.version>2.4.2.1-RELEASE</org.crazycake.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

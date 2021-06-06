@@ -1,4 +1,4 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
 import org.apache.shiro.authc.HostAuthenticationToken;
 

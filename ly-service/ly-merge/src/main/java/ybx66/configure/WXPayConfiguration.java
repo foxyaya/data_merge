@@ -2,6 +2,7 @@ package ybx66.configure;
 
 import com.github.wxpay.sdk.WXPay;
 import com.github.wxpay.sdk.WXPayConstants;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,6 +23,12 @@ public class WXPayConfiguration {
     @ConfigurationProperties(prefix = "ly.pay")
     public PayConfig payConfig(){
         return new PayConfig();
+    }
+
+    @Bean
+    @ConfigurationProperties(prefix = "ly.jdbc")
+    public JdbcConnectConfig jdbcConnectConfig(){
+        return new JdbcConnectConfig();
     }
 
     @Bean

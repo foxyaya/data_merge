@@ -1,4 +1,4 @@
-package comybx.demo.dto;
+package cn.ybx66.conmmon.vo;
 
 /**
  * @author nullwagesexcption

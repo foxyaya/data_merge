@@ -3,6 +3,8 @@ package ybx66;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
@@ -13,9 +15,11 @@ import tk.mybatis.spring.annotation.MapperScan;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan("cn.ybx66.mapper")
+@MapperScan("ybx66.mapper")
+@EnableFeignClients(basePackages={"cn.ybx66.userapi.feigin"})
 public class DataMergeApplication {
     public static void main(String[] args) {
         SpringApplication.run(DataMergeApplication.class,args);
     }
+
 }

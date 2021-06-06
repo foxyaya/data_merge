@@ -1,6 +1,7 @@
-package com.wsl.service;
+package cn.ybx66.shiro.service;
 
-import com.wsl.bean.User;
+
+import cn.ybx66.userapi.pojo.User;
 
 public interface LoginService{
 

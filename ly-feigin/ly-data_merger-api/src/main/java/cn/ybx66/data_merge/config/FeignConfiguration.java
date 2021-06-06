@@ -1,4 +1,4 @@
-package cn.ybx66.userapi.config;
+package cn.ybx66.data_merge.config;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
@@ -19,7 +19,7 @@ import java.util.Enumeration;
  * @description
  */
 @Configuration
-public class FeignConfiguration  {
+public class FeignConfiguration {
     private Logger logger = LoggerFactory.getLogger(FeignConfiguration.class);
 
     @Bean

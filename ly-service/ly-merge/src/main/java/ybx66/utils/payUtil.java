@@ -1,7 +1,10 @@
-package cn.ybx66.utils;
+package ybx66.utils;
 
 
-import cn.ybx66.config.PayConfig;
+
+import cn.ybx66.conmmon.vo.ResultDescDTO;
+import cn.ybx66.conmmon.vo.ResultMessageDTO;
+import cn.ybx66.data_merge.pojo.Shop;
 import com.github.wxpay.sdk.WXPay;
 import com.github.wxpay.sdk.WXPayConstants;
 import com.github.wxpay.sdk.WXPayUtil;
@@ -9,11 +12,16 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import ybx66.configure.PayConfig;
+import ybx66.dto.PayDTO;
+import ybx66.mapper.ShopMapper;
+import ybx66.service.ShopService;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * @author Fox
@@ -30,6 +38,12 @@ public class payUtil {
 
     @Autowired
     private PayConfig config;
+
+    @Autowired
+    public ShopService shopService;
+
+    @Autowired
+    public ShopMapper shopMapper;
 
     /**
      * 判断签名有效性
@@ -71,13 +85,16 @@ public class payUtil {
 
     /**
      * 生成微信支付订单    通知可以通过对订单状态->前端轮询  也可以使用websocket进行页面通知前端
-     * @param orderId
-     * @param totalPay
-     * @param dec
+     * @param
+     * @param
+     * @param
      * @return
      */
-    public String createPayUrl(Long orderId,Long totalPay,String dec) {
-        //这里可以采用redis进行订单号的保存 在别的地方取 有时候可以用redis生成的id标识某些数据 redis是单线程的 生成的id具有唯一性
+    public ResultMessageDTO createPayUrl(String shopId) {//Long orderId,Long totalPay,String dec
+        if (shopId==null || shopId.equals("")){
+            return new ResultMessageDTO(400,ResultDescDTO.FAIL,"请先填写好店铺信息");
+        }
+        //这里可以采用redis进行订单号的保存 在别的地方取 有时候可以用redis生成的id标识某些数据 redis是单线程的 生成的id具有唯一性 也是防止重复
 //        String key = "ly.pay.url." + orderId;
 //        try {
 //            String url = this.redisTemplate.opsForValue().get(key);
@@ -88,17 +105,20 @@ public class payUtil {
 //            log.error("查询缓存付款链接异常,订单编号：{}", orderId, e);
 //        }
         String url="";
+        PayDTO payDTO = new PayDTO();
         try {
             //为返回体装配属性
             Map<String, String> data = new HashMap<>();
             // 商品描述
-            data.put("body", dec);
+            data.put("body", "开店");
+            String orderId = String.valueOf(new Random().nextInt(899999999) + 1000000000);
+            payDTO.setOrderId(orderId);
             // 订单号
-            data.put("out_trade_no", orderId.toString());
+            data.put("out_trade_no", orderId);
             //货币
             data.put("fee_type", "CNY");
             //金额，单位是分
-            data.put("total_fee", totalPay.toString());
+            data.put("total_fee", "1");
             //调用微信支付的终端IP  (随便输入)
             data.put("spbill_create_ip", "127.0.0.1");
             //回调地址
@@ -124,27 +144,32 @@ public class payUtil {
 //                }
 //                return url;
 
-            //在此处调用二维码生成工具生成付款二维码
-            File file = new File("C://Users/ACER/Desktop/表情包",out_trade_no+".jpg");
-            if (!file.exists()){
-                file.createNewFile();
-            }
-            QRCodeUtil.createImage(url, new FileOutputStream(file));
+            //在此处调用二维码生成工具生成付款二维码 保留在服务器上
+            //此处解决办法是 前端调用qrcode生成付款码
+//            File file = new File("C://Users/ACER/Desktop/表情包",out_trade_no+".jpg");
+//            if (!file.exists()){
+//                file.createNewFile();
+//            }
+//            QRCodeUtil.createImage(url, new FileOutputStream(file));
         } catch (Exception e) {
             log.error("创建预交易订单异常", e);
             return null;
         }
-        return url;
+        payDTO.setUrl(url);
+        return new ResultMessageDTO(200, ResultDescDTO.OK,payDTO);
     }
 
     /**
      * 主动查询订单状态
      * @param OrderId
      */
-    public void queryPayStatus(Long OrderId){
+    public ResultMessageDTO queryPayStatus(String OrderId,String shopId){
+        if (OrderId==null || OrderId.equals("") || shopId==null || shopId.equals("")){
+            return new ResultMessageDTO(200,ResultDescDTO.OK,"请先填写好店铺信息");
+        }
         try {
             Map<String,String> data = new HashMap<>();
-            data.put("out_trade_no",OrderId.toString());
+            data.put("out_trade_no",OrderId);
             Map<String, String> result = wxPay.orderQuery(data);
 
             //校验状态
@@ -180,6 +205,11 @@ public class payUtil {
             if ("SUCCESS".equals(tradeState)){
                 //支付成功
                 //修改订单状态 返回成功
+                ResultMessageDTO byId = shopService.findById(shopId);
+                Shop message = (Shop) byId.getMessage();
+                message.setFlag(1);
+                shopMapper.updateByPrimaryKey(message);
+                return new ResultMessageDTO(200,ResultDescDTO.OK,"支付成功");
             }
 
             if ("NOTPAY".equals(tradeState) || "USERPAYING".equals(tradeState)) {
@@ -190,7 +220,7 @@ public class payUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        return new ResultMessageDTO(200,ResultDescDTO.OK,"支付失败");
     }
 
 }

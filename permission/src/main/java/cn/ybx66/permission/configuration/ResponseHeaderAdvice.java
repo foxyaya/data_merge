@@ -1,4 +1,4 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
@@ -30,7 +30,7 @@ public class ResponseHeaderAdvice implements ResponseBodyAdvice<Object> {
             return o;
         }
 
-        // 对于未添加跨域消息头的响应进行处理
+        // 对于未添加跨域消息头的响应进行处理  --- 跨域处理
         HttpServletRequest request = serverRequest.getServletRequest();
         HttpServletResponse response = serverResponse.getServletResponse();
         String originHeader = "Access-Control-Allow-Origin";

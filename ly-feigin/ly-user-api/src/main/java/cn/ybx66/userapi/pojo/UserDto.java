@@ -1,4 +1,4 @@
-package cn.ybx66.permission.dto;
+package cn.ybx66.userapi.pojo;
 
 import cn.ybx66.userapi.pojo.Permissions;
 import lombok.Data;

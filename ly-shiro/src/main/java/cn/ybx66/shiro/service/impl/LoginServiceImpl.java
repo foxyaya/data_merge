@@ -1,18 +1,23 @@
-package com.wsl.service.impl;
+package cn.ybx66.shiro.service.impl;
 
-import com.wsl.bean.Permissions;
-import com.wsl.bean.Role;
-import com.wsl.bean.User;
-import com.wsl.service.LoginService;
+
+import cn.ybx66.conmmon.vo.ResultMessageDTO;
+import cn.ybx66.shiro.service.LoginService;
+import cn.ybx66.userapi.feigin.UserFigin;
+import cn.ybx66.userapi.pojo.User;
+import com.alibaba.fastjson.JSON;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import javax.swing.text.html.parser.Entity;
+
 
 @Service
 public class LoginServiceImpl implements LoginService {
+
+    @Autowired
+    private UserFigin userFigin;
 
     @Override
     public User getUserByName(String getMapByName) {
@@ -20,31 +25,15 @@ public class LoginServiceImpl implements LoginService {
     }
 
     /**
-     * 模拟数据库查询
+     * 通过feigin在数据库查询用户信息
      *
      * @param userName 用户名
      * @return User
      */
     private User getMapByName(String userName) {
-        Permissions permissions1 = new Permissions("1", "query");
-        Permissions permissions2 = new Permissions("2", "add");
-        Set<Permissions> permissionsSet = new HashSet<>();
-        permissionsSet.add(permissions1);
-        permissionsSet.add(permissions2);
-        Role role = new Role("1", "admin", permissionsSet);
-        Set<Role> roleSet = new HashSet<>();
-        roleSet.add(role);
-        User user = new User("1", "wsl", "123456", roleSet);
-        Map<String, User> map = new HashMap<>();
-        map.put(user.getUserName(), user);
-
-        Set<Permissions> permissionsSet1 = new HashSet<>();
-        permissionsSet1.add(permissions1);
-        Role role1 = new Role("2", "user", permissionsSet1);
-        Set<Role> roleSet1 = new HashSet<>();
-        roleSet1.add(role1);
-        User user1 = new User("2", "zhangsan", "123456", roleSet1);
-        map.put(user1.getUserName(), user1);
-        return map.get(userName);
+        // 使用feigin获取用户及其操作权限
+        ResultMessageDTO entity = userFigin.getUser(userName);
+        User user = JSON.parseObject(JSON.toJSONString(entity.getMessage()), User.class);
+        return user;
     }
 }

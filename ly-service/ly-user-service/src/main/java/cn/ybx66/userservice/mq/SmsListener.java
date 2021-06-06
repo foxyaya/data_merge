@@ -1,7 +1,8 @@
-package comybx.demo.mq;
+package cn.ybx66.userservice.mq;
 
-import comybx.demo.utils.MailUtils;
-import comybx.demo.utils.SmsUtil;
+
+import cn.ybx66.userservice.utils.MailUtils;
+import cn.ybx66.userservice.utils.SmsUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.amqp.core.ExchangeTypes;
@@ -9,9 +10,7 @@ import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
@@ -21,7 +20,7 @@ import java.util.Map;
  * @author Fox
  * @version 1.0
  * @date 2020/4/11 21:45
- * @description
+ * @description 作用： 异步 解耦 削峰
  */
 @Component
 @Slf4j
@@ -60,7 +59,6 @@ public class SmsListener {
             exchange = @Exchange(name = "ly.smtp.exchange", type = ExchangeTypes.TOPIC),
             key = "smtp.verify.code"
     ))
-    //key = {"#.#"}  绑定一切路由
     public void listenSMTP(Map<String,String> msg)  {
         if (CollectionUtils.isEmpty(msg)){
             return ;

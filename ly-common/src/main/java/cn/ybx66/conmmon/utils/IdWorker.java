@@ -23,6 +23,11 @@ import java.net.NetworkInterface;
  * @author Polim
  */
 public class IdWorker {
+    /**
+     * 单例模式
+     */
+    private static final IdWorker ID_WORKER = new IdWorker();
+
     // 时间起始标记点，作为基准，一般取系统的最近时间（一旦确定不能变动）
     private final static long twepoch = 1288834974657L;
     // 机器标识位数
@@ -72,6 +77,21 @@ public class IdWorker {
         this.workerId = workerId;
         this.datacenterId = datacenterId;
     }
+
+    /**
+     * 使用单例模式获取ID
+     * @return
+     */
+    public static long nextSingleId(){
+        //线程休眠1ms，避免运行速度过快产生同一ID
+        try {
+            Thread.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return ID_WORKER.nextId();
+    }
+
     /**
      * 获取下一个ID
      *
@@ -94,10 +114,11 @@ public class IdWorker {
             sequence = 0L;
         }
         lastTimestamp = timestamp;
-        // ID偏移组合生成最终的ID，并返回ID
+        // ID偏移组合生成最终的ID，并返回ID//
         long nextId = ((timestamp - twepoch) << timestampLeftShift)
                 | (datacenterId << datacenterIdShift)
                 | (workerId << workerIdShift) | sequence;
+
 
         return nextId;
     }
@@ -124,14 +145,14 @@ public class IdWorker {
         mpid.append(datacenterId);
         String name = ManagementFactory.getRuntimeMXBean().getName();
         if (!name.isEmpty()) {
-         /*
-          * GET jvmPid
-          */
+            /*
+             * GET jvmPid
+             */
             mpid.append(name.split("@")[0]);
         }
-      /*
-       * MAC + PID 的 hashcode 获取16个低位
-       */
+        /*
+         * MAC + PID 的 hashcode 获取16个低位
+         */
         return (mpid.toString().hashCode() & 0xffff) % (maxWorkerId + 1);
     }
 
@@ -158,6 +179,5 @@ public class IdWorker {
         }
         return id;
     }
-
 
 }

@@ -1,4 +1,4 @@
-package com.github.demo.dto;
+package cn.ybx66.permission.dto;
 
 import java.util.Date;
 

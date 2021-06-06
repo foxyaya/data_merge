@@ -1,8 +1,7 @@
-package com.github.demo.controller;
+package cn.ybx66.permission.controller;
 
-import com.github.demo.dto.UserDto;
-import com.github.demo.service.UserService;
-
+import cn.ybx66.permission.service.UserService;
+import cn.ybx66.userapi.pojo.UserDto;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -31,7 +30,7 @@ public class LoginController {
      * @return token
      */
     @PostMapping(value = "/login")
-    public ResponseEntity<Void> login(@RequestBody UserDto loginInfo, HttpServletRequest request, HttpServletResponse response){      
+    public ResponseEntity<Void> login(@RequestBody UserDto loginInfo, HttpServletRequest request, HttpServletResponse response){
         Subject subject = SecurityUtils.getSubject();
         try {
             UsernamePasswordToken token = new UsernamePasswordToken(loginInfo.getUsername(), loginInfo.getPassword());

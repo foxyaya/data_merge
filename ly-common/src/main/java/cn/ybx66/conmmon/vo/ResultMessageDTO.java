@@ -1,4 +1,4 @@
-package comybx.demo.dto;
+package cn.ybx66.conmmon.vo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -17,11 +17,6 @@ public class ResultMessageDTO implements Serializable {
 
     private ResultDescDTO desc;
 
-    /**
-     * 此字段是为了适配微信支付，仅该模块存在
-     */
-    private String payDesc;
-
     private Object message;
 
     public ResultMessageDTO(Integer code, ResultDescDTO desc, Object message) {
@@ -30,9 +25,4 @@ public class ResultMessageDTO implements Serializable {
         this.message = message;
     }
 
-    public ResultMessageDTO(Integer code, String payDesc, Object message) {
-        this.code = code;
-        this.payDesc = payDesc;
-        this.message = message;
-    }
 }

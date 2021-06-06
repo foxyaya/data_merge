@@ -1,0 +1,5 @@
+cn\ybx66\controller\UploadController.class
+cn\ybx66\LyUploadApplication.class
+cn\ybx66\config\FastClientImporter.class
+cn\ybx66\config\UploadProperties.class
+cn\ybx66\service\UploadService.class

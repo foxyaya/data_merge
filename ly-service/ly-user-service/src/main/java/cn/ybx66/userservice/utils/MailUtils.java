@@ -1,6 +1,7 @@
 package cn.ybx66.userservice.utils;
 
-import comybx.demo.dto.project.SmtpDTO;
+
+import cn.ybx66.userservice.dto.SmtpDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,7 +58,7 @@ public class MailUtils {
         //获取邮件对象
         Message message=new MimeMessage(session);
         try {
-            //生成6位数字
+            //生成6位验证码
             String code = String.valueOf(new Random().nextInt(899999) + 100000);
             //设置发件人地址
             message.setFrom(new InternetAddress("917367646@qq.com"));
@@ -65,7 +66,7 @@ public class MailUtils {
             //设置收件人地址 (将参数传进来)
             message.setRecipients(Message.RecipientType.TO,new InternetAddress[]{new InternetAddress(to)});
             //设置邮件标题
-            message.setSubject("来自邦邦商城的激活邮件");
+            message.setSubject("来自Bang的激活邮件");
             //设置邮件正文
             message.setContent("<h1>Bang！亲~我来啦！</h1><h3>您的验证码为："+code+"，请在五分钟之内使用！</h3>"+"<p align=right>系统自动发送，请不要回复！</p>","text/html;charset=UTF-8");
             //得到邮差对象

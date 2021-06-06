@@ -1,10 +1,11 @@
-package com.github.demo.filter;
+package cn.ybx66.permission.filter;
 
-import com.github.demo.configuration.JWTToken;
-import com.github.demo.configuration.JwtUtils;
-import com.github.demo.dto.UserDto;
-import com.github.demo.service.UserService;
 
+import cn.ybx66.permission.configuration.JWTToken;
+import cn.ybx66.permission.configuration.JwtUtils;
+import cn.ybx66.permission.service.UserService;
+
+import cn.ybx66.userapi.pojo.UserDto;
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpStatus;
@@ -16,8 +17,7 @@ import org.apache.shiro.web.util.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.context.request.async.WebAsyncManager;
-import org.springframework.web.context.request.async.WebAsyncUtils;
+
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;

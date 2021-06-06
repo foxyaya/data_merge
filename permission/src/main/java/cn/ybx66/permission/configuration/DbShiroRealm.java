@@ -1,7 +1,10 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
 import java.util.List;
 
+import cn.ybx66.permission.service.UserService;
+import cn.ybx66.userapi.pojo.Permissions;
+import cn.ybx66.userapi.pojo.UserDto;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -17,13 +20,12 @@ import org.apache.shiro.util.ByteSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.github.demo.dto.UserDto;
-import com.github.demo.service.UserService;
+
 
 public class DbShiroRealm extends AuthorizingRealm {
 	private final Logger log = LoggerFactory.getLogger(DbShiroRealm.class);
 	
-	private static final String encryptSalt = "F12839WhsnnEV$#23b";
+	private static final String encryptSalt = "jh520";
 	private UserService userService;
 	
 	public DbShiroRealm(UserService userService) {
@@ -54,12 +56,21 @@ public class DbShiroRealm extends AuthorizingRealm {
         UserDto user = (UserDto) principals.getPrimaryPrincipal();
         List<String> roles = user.getRoles();
         if(roles == null) {
-            roles = userService.getUserRoles(user.getUserId());
+            roles = userService.getUserRoles(user.getUsername());
             user.setRoles(roles);
         }
         if (roles != null)
             simpleAuthorizationInfo.addRoles(roles);
+		//添加权限
+		List<List<Permissions>> permission = userService.getPermission(user.getUsername());
+		if( permission!=null){
+			for (int i =0;i<permission.size();i++){
+				for (Permissions permissions : permission.get(i)) {
+					simpleAuthorizationInfo.addStringPermission(permissions.getPermissionsName());
+				}
+			}
 
+		}
         return simpleAuthorizationInfo;
 	}
 

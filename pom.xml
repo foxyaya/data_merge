@@ -9,14 +9,17 @@
     <modules>
         <module>ly-registry</module>
         <module>ly-gateway</module>
-        <module>ly-item</module>
         <module>ly-common</module>
         <module>ly-upload</module>
+        <module>ly-shiro</module>
+        <module>ly-service</module>
+        <module>ly-feigin</module>
+        <module>permission</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>leyou</name>
-    <description>Demo project for Spring Boot</description>
+    <name>data_merge_pull</name>
+    <description>数据整合推荐系统</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -82,12 +85,5 @@
         </dependencies>
     </dependencyManagement>
 
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
+
 </project>

@@ -1,5 +1,8 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
+import cn.ybx66.permission.filter.AnyRolesAuthorizationFilter;
+import cn.ybx66.permission.filter.JwtAuthFilter;
+import cn.ybx66.permission.service.UserService;
 import org.apache.shiro.authc.Authenticator;
 import org.apache.shiro.authc.pam.FirstSuccessfulStrategy;
 import org.apache.shiro.authc.pam.ModularRealmAuthenticator;
@@ -10,13 +13,13 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.spring.web.config.DefaultShiroFilterChainDefinition;
 import org.apache.shiro.spring.web.config.ShiroFilterChainDefinition;
 import org.apache.shiro.web.mgt.DefaultWebSessionStorageEvaluator;
+import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.github.demo.filter.AnyRolesAuthorizationFilter;
-import com.github.demo.filter.JwtAuthFilter;
-import com.github.demo.service.UserService;
+
 
 import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
@@ -31,7 +34,7 @@ import java.util.Map;
 public class ShiroConfig {
 
     @Bean
-    public FilterRegistrationBean<Filter> filterRegistrationBean(SecurityManager securityManager,UserService userService) throws Exception{
+    public FilterRegistrationBean<Filter> filterRegistrationBean(SecurityManager securityManager, UserService userService) throws Exception{
         FilterRegistrationBean<Filter> filterRegistration = new FilterRegistrationBean<Filter>();
         filterRegistration.setFilter((Filter)shiroFilter(securityManager, userService).getObject());
         filterRegistration.addInitParameter("targetFilterLifecycle", "true");
@@ -104,6 +107,13 @@ public class ShiroConfig {
 
     protected AnyRolesAuthorizationFilter createRolesFilter(){
         return new AnyRolesAuthorizationFilter();
+    }
+    @Bean
+    @ConditionalOnMissingBean
+    public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {
+        DefaultAdvisorAutoProxyCreator defaultAAP = new DefaultAdvisorAutoProxyCreator();
+        defaultAAP.setProxyTargetClass(true);
+        return defaultAAP;
     }
 
 }

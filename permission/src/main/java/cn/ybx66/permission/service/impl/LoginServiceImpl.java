@@ -1,7 +1,7 @@
-package cn.ybx66.shiro.service.impl;
+package cn.ybx66.permission.service.impl;
 
-
-import cn.ybx66.shiro.service.LoginService;
+import cn.ybx66.conmmon.vo.ResultMessageDTO;
+import cn.ybx66.permission.service.LoginService;
 import cn.ybx66.userapi.feigin.UserFigin;
 import cn.ybx66.userapi.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +28,8 @@ public class LoginServiceImpl implements LoginService {
      */
     private User getMapByName(String userName) {
         // 使用feigin获取用户及其操作权限
-        ResponseEntity<User> entity = userFigin.getUser(userName);
-        User userInfo = entity.getBody();
+        ResultMessageDTO entity = userFigin.getUser(userName);
+        User userInfo = (User)entity.getMessage();
         return userInfo;
     }
 }

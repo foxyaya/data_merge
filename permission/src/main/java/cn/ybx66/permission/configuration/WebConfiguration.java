@@ -1,4 +1,4 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
 import java.util.concurrent.Executors;
 
@@ -8,7 +8,10 @@ import org.springframework.web.servlet.config.annotation.*;
 
 @Configuration
 public class WebConfiguration extends WebMvcConfigurationSupport{
-
+	/**
+	 * 跨域处理
+	 * @param registry
+	 */
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")

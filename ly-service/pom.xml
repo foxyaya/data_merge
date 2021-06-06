@@ -9,8 +9,82 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ybx66.parent</groupId>
+    <groupId>com.ybx66.service</groupId>
     <artifactId>ly-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ly-user-service</module>
+        <module>ly-merge</module>
+    </modules>
+    <properties>
+        <org.crazycake.version>2.4.2.1-RELEASE</org.crazycake.version>
+        <jwt.auth0.version>3.2.0</jwt.auth0.version>
+        <org.apache.httpcomponents.version>4.5.5</org.apache.httpcomponents.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- jdbc启动器 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ybx66.service</groupId>
+            <artifactId>ly-item-interface</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ybx66.common</groupId>
+            <artifactId>ly-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <!--导入spring-AMQP-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!--引入feign依赖  -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>${jwt.auth0.version}</version>
+        </dependency>
+        <!-- 使用redis做数据缓存，如果不需要可不依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${org.apache.httpcomponents.version}</version>
+        </dependency>
+
+    </dependencies>
 
 
 </project>

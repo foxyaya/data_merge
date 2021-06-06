@@ -1,4 +1,5 @@
-package comybx.demo.utils;
+package cn.ybx66.userservice.utils;
+
 
 import com.alibaba.fastjson.JSONObject;
 import com.zhenzi.sms.ZhenziSmsClient;
@@ -36,13 +37,15 @@ public class SmsUtil {
              verifyCode = String.valueOf(new Random().nextInt(899999) + 100000);
             //发送短信
             ZhenziSmsClient client = new ZhenziSmsClient("https://sms_developer.zhenzikj.com", "104339","653256ae-57b6-405f-a44d-10b282bfa065");
-            Map<String, String> params = new HashMap<String, String>();
+            Map<String, Object> params = new HashMap<String, Object>();
 //            System.out.println("phone = " + phone);
-            params.put("number",phone);
-            params.put("message","您的验证码为:" + verifyCode + "，有效期为5分钟，邦邦商城！");
-            if (verifyCode==null){
-                log.info("验证码有问题");
-            }
+            params.put("number", phone);
+            params.put("templateId", "4501");
+            String[] templateParams = new String[2];
+            templateParams[0] = verifyCode;
+            templateParams[1] = "5分钟";
+            params.put("templateParams", templateParams);
+
             String result = client.send(params);
             json = JSONObject.parseObject(result);
             System.out.println("result = " + result);

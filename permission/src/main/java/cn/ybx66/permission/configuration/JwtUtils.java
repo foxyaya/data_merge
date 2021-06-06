@@ -1,4 +1,4 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

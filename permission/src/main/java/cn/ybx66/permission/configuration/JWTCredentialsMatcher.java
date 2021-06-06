@@ -1,10 +1,11 @@
-package com.github.demo.configuration;
+package cn.ybx66.permission.configuration;
 
+import cn.ybx66.userapi.pojo.UserDto;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.github.demo.dto.UserDto;
+
 
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -18,6 +19,7 @@ public class JWTCredentialsMatcher implements CredentialsMatcher {
 	
 	private final Logger log = LoggerFactory.getLogger(JWTCredentialsMatcher.class);
 
+	//检验token的合法性
     @Override
     public boolean doCredentialsMatch(AuthenticationToken authenticationToken, AuthenticationInfo authenticationInfo) {
         String token = (String) authenticationToken.getCredentials();

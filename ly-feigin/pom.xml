@@ -11,6 +11,35 @@
 
     <groupId>com.ybx66.feigin</groupId>
     <artifactId>ly-feigin</artifactId>
+    <packaging>pom</packaging>
+    <properties>
+        <com.ybx66.common>1.0.0-SNAPSHOT</com.ybx66.common>
+    </properties>
+    <modules>
+        <module>ly-user-api</module>
+        <module>ly-data_merger-api</module>
+    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ybx66.common</groupId>
+            <artifactId>ly-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

@@ -1,0 +1,7 @@
+cn\ybx66\userapi\feigin\UserFigin.class
+cn\ybx66\userapi\config\FeignConfiguration.class
+cn\ybx66\userapi\pojo\Permissions.class
+cn\ybx66\userapi\pojo\Role.class
+cn\ybx66\userapi\config\FeignConfiguration$1.class
+cn\ybx66\userapi\pojo\User.class
+cn\ybx66\userapi\pojo\UserDto.class

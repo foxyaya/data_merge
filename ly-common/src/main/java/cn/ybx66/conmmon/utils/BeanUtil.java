@@ -17,7 +17,7 @@ import static cn.ybx66.conmmon.utils.IdWorker.nextSingleId;
  * Author xiaomousheng
  * Date 2019/6/11 20:49
  */
-public class BeanUtils {
+public class BeanUtil {
 
 
     /**
@@ -78,7 +78,7 @@ public class BeanUtils {
         }
         try {
             //创建逻辑位
-            Method setFlag = clazz.getDeclaredMethod("setFlag",String.class);
+            Method setFlag = clazz.getDeclaredMethod("setFlag",Integer.class);
             setFlag.invoke(t, 1);
         } catch (NoSuchMethodException e) {
             throw new LyException( ExceptionEnums.FLAG_IS_ERROR);

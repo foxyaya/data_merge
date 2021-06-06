@@ -1,4 +1,4 @@
-package cn.ybx66.userservice.vo;
+package cn.ybx66.shiro.vo;
 
 import cn.ybx66.userapi.pojo.Role;
 import lombok.Data;
@@ -21,11 +21,11 @@ public class UsersDTO implements Serializable {
 
     public String username;
 
-    public String password;
-
     public String headImage;
 
     public String phone;
+
+    public String sign;
     /**
      * 用户对应的角色集合
      */

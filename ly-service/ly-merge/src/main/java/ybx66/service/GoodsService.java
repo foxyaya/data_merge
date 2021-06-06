@@ -1,7 +1,9 @@
 package ybx66.service;
 
+import cn.ybx66.conmmon.vo.ResultMessageDTO;
 import cn.ybx66.data_merge.pojo.Goods;
 import com.github.pagehelper.PageInfo;
+import ybx66.dto.GoodsDTO;
 
 
 import java.util.List;
@@ -13,63 +15,40 @@ import java.util.List;
  *****/
 public interface GoodsService {
 
-    /***
-     * Goods多条件分页查询
-     * @param goods
-     * @param page
-     * @param size
-     * @return
-     */
-    PageInfo<Goods> findPage(Goods goods, int page, int size);
-
-    /***
-     * Goods分页查询
-     * @param page
-     * @param size
-     * @return
-     */
-    PageInfo<Goods> findPage(int page, int size);
-
-    /***
-     * Goods多条件搜索方法
-     * @param goods
-     * @return
-     */
-    List<Goods> findList(Goods goods);
-
 
     /***
      * 删除Goods
      * @param id
      */
-    int delete(String id);
+    ResultMessageDTO delete(String id);
 
     /***
      * 修改Goods数据
      * @param goods
      */
-    int update(Goods goods);
-    /**
-     * 构建Goods的数据查询pojo
-     */
-//    Goods makeGoods(Goods goods);
+    ResultMessageDTO update(Goods goods);
 
     /***
      * 新增Goods
      * @param goods
      */
-    Long add(Goods goods);
+    ResultMessageDTO add(Goods goods);
 
     /**
      * 根据ID查询Goods
      * @param id
      * @return
      */
-     Goods findById(String id);
+     ResultMessageDTO findById(String id);
 
     /***
-     * 查询所有Goods
+     * 查询所有Goods user
      * @return
      */
-    List<Goods> findAll();
+    ResultMessageDTO findAll(GoodsDTO goodsDTO);
+    /***
+     * 查询所有Goods admin
+     * @return
+     */
+    ResultMessageDTO findAllByAdmin(GoodsDTO goodsDTO);
 }

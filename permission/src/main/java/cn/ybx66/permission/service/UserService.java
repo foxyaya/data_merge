@@ -1,16 +1,20 @@
-package com.github.demo.service;
+package cn.ybx66.permission.service;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import cn.ybx66.permission.configuration.JwtUtils;
+import cn.ybx66.userapi.pojo.Permissions;
+import cn.ybx66.userapi.pojo.Role;
+import cn.ybx66.userapi.pojo.User;
+import cn.ybx66.userapi.pojo.UserDto;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import com.github.demo.configuration.JwtUtils;
-import com.github.demo.dto.UserDto;
+
 
 /**
  * 用户信息接口
@@ -18,21 +22,21 @@ import com.github.demo.dto.UserDto;
 @Service
 public class UserService {
 	
-	private static final String encryptSalt = "F12839WhsnnEV$#23b";
+	private static final String encryptSalt = "jh520";
+
+	@Autowired
+	private LoginService loginService;
 
 	@Autowired
 	private StringRedisTemplate redisTemplate;
    
     /**
      * 保存user登录信息，返回token
-     * @param userDto
+     * @param
      */
     public String generateJwtToken(String username) {
-    	String salt = "12345";//JwtUtils.generateSalt();
-    	/**
-    	 * @todo 将salt保存到数据库或者缓存中
-    	 * redisTemplate.opsForValue().set("token:"+username, salt, 3600, TimeUnit.SECONDS);
-    	 */   	
+    	String salt = JwtUtils.generateSalt();
+		redisTemplate.opsForValue().set("token:"+username, salt, 3600, TimeUnit.SECONDS);//保存在缓存中
     	return JwtUtils.sign(username, salt, 3600); //生成jwt token，设置过期时间为1小时
     }
     
@@ -42,27 +46,22 @@ public class UserService {
      * @return
      */
     public UserDto getJwtTokenInfo(String username) {
-    	String salt = "12345";
-    	/**
-    	 * @todo 从数据库或者缓存中取出jwt token生成时用的salt
-    	 * salt = redisTemplate.opsForValue().get("token:"+username);
-    	 */   	
+    	String salt = "";
+		salt = redisTemplate.opsForValue().get("token:"+username);
     	UserDto user = getUserInfo(username);
     	user.setSalt(salt);
     	return user;
     }
 
     /**
-     * 清除token信息
-     * @param userName 登录用户名
-     * @param terminal 登录终端
+     * 清除token信息 下线就删除
+     * @param
+     * @param
+	 *
      */
     public void deleteLoginInfo(String username) {
-    	/**
-    	 * @todo 删除数据库或者缓存中保存的salt
-    	 * redisTemplate.delete("token:"+username);
-    	 */
-    	
+
+		redisTemplate.delete("token:"+username);
     }
     
     /**
@@ -71,10 +70,11 @@ public class UserService {
      * @return
      */
     public UserDto getUserInfo(String userName) {
-    	UserDto user = new UserDto();
-    	user.setUserId(1L);
-    	user.setUsername("admin");
-    	user.setEncryptPwd(new Sha256Hash("123456", encryptSalt).toHex());
+		User userByName = loginService.getUserByName(userName);
+		UserDto user = new UserDto();
+    	user.setUserId(Long.valueOf(userByName.getId()));
+    	user.setUsername(userByName.getUsername());
+    	user.setEncryptPwd(new Sha256Hash(userByName.getPassword(), encryptSalt).toHex());
     	return user;
     }
     
@@ -83,8 +83,26 @@ public class UserService {
      * @param userId
      * @return
      */
-    public List<String> getUserRoles(Long userId){
-    	return Arrays.asList("admin");
+    public List<String> getUserRoles(String userId){
+		List<String> list = new ArrayList<>();
+		User userByName = loginService.getUserByName(userId);
+		List<Role> roles = userByName.getRoles();
+		for (Role role : roles){
+			list.add(role.getRoleName());
+		}
+//		redisTemplate.opsForHash().put("Role:"+userId, "Role:"+userId, list);
+		return list;
     }
+
+	public List<List<Permissions>> getPermission(String userId){
+		List<List<Permissions>> list = new ArrayList<>();
+		User userByName = loginService.getUserByName(userId);
+		List<Role> roles = userByName.getRoles();
+		for (Role role : roles){
+			list.add(role.getPermissions());
+		}
+//		redisTemplate.opsForHash().put("permissions:"+userId, "permissions:"+userId, list);
+		return list;
+	}
 
 }
